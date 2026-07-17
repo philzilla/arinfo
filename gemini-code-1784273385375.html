@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fin de l'aventure Arinfo</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            /* L'image de fond d'origine est embarquée en base64 pour rester autonome */
+            background-image: url('data:image/jpeg;base64,...[IMAGE_DATA_EMBEDDED]...');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4); /* Filtre discret pour augmenter la lisibilité */
+            z-index: 1;
+        }
+        .container {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            max-width: 950px;
+            padding: 40px 24px 120px 24px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 38px;
+            font-weight: 800;
+            color: #FFE600; /* Jaune rappelant la charte */
+            text-transform: uppercase;
+            margin: 0 0 35px 0;
+            letter-spacing: 1px;
+            line-height: 1.2;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+        }
+        p {
+            font-size: 19px;
+            font-weight: 400;
+            line-height: 1.6;
+            margin: 0 auto 30px auto;
+            max-width: 850px;
+            text-shadow: 0 1px 4px rgba(0,0,0,0.5);
+        }
+        p.secondary {
+            font-size: 18px;
+            font-weight: bold;
+            max-width: 750px;
+            margin-bottom: 40px;
+        }
+        p.secondary strong {
+            color: #FFE600;
+        }
+        p.italic-footer {
+            font-size: 14px;
+            font-style: italic;
+            font-weight: 300;
+            color: #e0e0e0;
+            max-width: 750px;
+            margin-bottom: 0;
+        }
+        .footer-logo-container {
+            position: absolute;
+            bottom: 40px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            z-index: 2;
+        }
+        .badge {
+            display: inline-block;
+            background-color: #ffffff;
+            padding: 10px 30px;
+            border-radius: 50px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+        }
+        .badge svg {
+            height: 42px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+
+    <div class="container">
+        <h1>C’est la fin de l’aventure Arinfo</h1>
+        
+        <p>
+            Nous tenons à remercier toutes celles et ceux qui ont contribué à cette aventure : 
+            apprenants, équipes, partenaires, entreprises et acteurs qui nous ont accompagnés.
+        </p>
+        
+        <p class="secondary">
+            Nous remercions les écoles qui assurent la continuité des parcours de nos apprenants 
+            en cours : <strong>DAWAN</strong> et <strong>AFPA</strong>.
+        </p>
+        
+        <p class="italic-footer">
+            Nous invitons les futurs talents du numérique à poursuivre leur parcours auprès d’écoles et d’acteurs engagés du secteur.
+        </p>
+    </div>
+
+    <div class="footer-logo-container">
+        <div class="badge">
+            <svg viewBox="0 0 350 70" width="220">
+                <g transform="translate(10, 5)">
+                    <path d="M 15 45 L 35 10 L 55 45 Z" fill="#3B5998" />
+                    <path d="M 35 10 L 55 45 L 47 45 L 35 24 Z" fill="#1A3365" />
+                    <path d="M 15 45 L 35 40 L 55 45 L 35 48 Z" fill="#6A85B8" />
+                    <path d="M 35 10 L 25 28 L 35 24 Z" fill="#8FAADC" />
+                    <text x="70" y="38" font-family="Arial, sans-serif" font-weight="bold" font-size="28" fill="#1A3365">arinfo</text>
+                    <text x="70" y="52" font-family="Arial, sans-serif" font-weight="500" font-size="8" fill="#1A3365" letter-spacing="0.5">École des métiers du numérique</text>
+                    <line x1="210" y1="12" x2="210" y2="52" stroke="#d0d0d0" stroke-width="1" />
+                    <text x="222" y="30" font-family="Arial, sans-serif" font-weight="800" font-size="8" fill="#505050" letter-spacing="1">GROUPE</text>
+                    <text x="222" y="42" font-family="Arial, sans-serif" font-weight="900" font-size="11" fill="#1A3365" letter-spacing="1.5">I-MAGINER</text>
+                </g>
+            </svg>
+        </div>
+    </div>
+</body>
+</html>
