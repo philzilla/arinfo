@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
         * {
             box-sizing: border-box;
         }
+
         body {
             margin: 0;
             padding: 0;
@@ -24,15 +26,18 @@
             justify-content: center;
             position: relative;
         }
+
         .overlay {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.4); /* Filtre discret pour augmenter la lisibilité */
+            background: rgba(0, 0, 0, 0.4);
+            /* Filtre discret pour augmenter la lisibilité */
             z-index: 1;
         }
+
         .container {
             position: relative;
             z-index: 2;
@@ -41,33 +46,48 @@
             padding: 40px 24px 120px 24px;
             text-align: center;
         }
+
         h1 {
             font-size: 38px;
             font-weight: 800;
-            color: #FFE600; /* Jaune rappelant la charte */
+            color: #FFE600;
+            /* Jaune rappelant la charte */
             text-transform: uppercase;
             margin: 0 0 35px 0;
             letter-spacing: 1px;
             line-height: 1.2;
-            text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
         }
+
         p {
             font-size: 19px;
             font-weight: 400;
             line-height: 1.6;
             margin: 0 auto 30px auto;
             max-width: 850px;
-            text-shadow: 0 1px 4px rgba(0,0,0,0.5);
+            text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
         }
+
         p.secondary {
             font-size: 18px;
             font-weight: bold;
             max-width: 750px;
             margin-bottom: 40px;
         }
+
         p.secondary strong {
             color: #FFE600;
         }
+
+        p.secondary strong a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        p.secondary strong a:hover {
+            text-decoration: underline;
+        }
+
         p.italic-footer {
             font-size: 14px;
             font-style: italic;
@@ -76,6 +96,7 @@
             max-width: 750px;
             margin-bottom: 0;
         }
+
         .footer-logo-container {
             position: absolute;
             bottom: 40px;
@@ -84,6 +105,7 @@
             text-align: center;
             z-index: 2;
         }
+
         .badge {
             display: inline-block;
             background-color: #ffffff;
@@ -91,33 +113,38 @@
             border-radius: 50px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
         }
+
         .badge svg {
             height: 42px;
             vertical-align: middle;
         }
     </style>
 </head>
+
 <body>
     <div class="overlay"></div>
 
     <div class="container">
         <h1>C’est la fin de l’aventure Arinfo</h1>
-        
+
         <p>
-            Nous tenons à remercier toutes celles et ceux qui ont contribué à cette aventure : 
+            Nous tenons à remercier toutes celles et ceux qui ont contribué à cette aventure :
             apprenants, équipes, partenaires, entreprises et acteurs qui nous ont accompagnés.
         </p>
-        
+
         <p class="secondary">
-            Nous remercions les écoles qui assurent la continuité des parcours de nos apprenants 
-            en cours : <strong>DAWAN</strong> et <strong>AFPA</strong>.
+            Nous remercions les écoles qui assurent la continuité des parcours de nos apprenants
+            en cours : <strong><a href="https://www.dawan.fr/contact" target="_blank">DAWAN</a></strong> et
+            <strong><a href="https://www.afpa.fr/recherche-centre" target="_blank">AFPA</a></strong>.
         </p>
-        
+
         <p class="italic-footer">
-            Nous invitons les futurs talents du numérique à poursuivre leur parcours auprès d’écoles et d’acteurs engagés du secteur.
+            Nous invitons les futurs talents du numérique à poursuivre leur parcours auprès d’écoles et d’acteurs
+            engagés du secteur.
         </p>
     </div>
 
-    
+
 </body>
+
 </html>
